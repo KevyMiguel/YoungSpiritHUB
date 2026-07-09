@@ -9,8 +9,8 @@ import bcrypt from "bcryptjs";
 const router = Router();
 const bcryptSalt = bcrypt.genSaltSync();
 
-router.get("/");
-router.post("/");
+// router.get("/");
+// router.post("/");
 
 
 
