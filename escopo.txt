@@ -1,0 +1,31 @@
+Front: "http://localhost:5173/Login"
+
+Back: "http://localhost:3000/Users" & "https://reqbin.com/"
+
+---
+
+MVP YoungSpiritHUB:
+
+1. USER common
+
+  - view devotionals
+
+  - Likes devotionals (review later looong time)
+
+  - But... auth for likes devotionals... because WOULD BE an error keep in Localstorage
+
+
+
+2. USER adm
+
+  - Create devotional
+
+  - Auth 
+
+
+
+3. Essential
+
+ - max pages: home, login, 4 devotionals
+
+ 

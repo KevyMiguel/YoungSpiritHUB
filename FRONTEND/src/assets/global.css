@@ -1,0 +1,54 @@
+:root {
+  --bg: #0f172a; /* Background */
+  --surface: #1e293b; /* Fundo secundário (cards / sections) */
+  --primary: #3730a3; /* Header/destaque */
+  --button: #6366f1; /* Botões */
+  --button-hover: #818cf8; /* HOVERBotoes */
+  --text: #e5e7eb; /* Cor dos textos principais*/
+  --muted: #94a3b8; /* Cor dos textos secundários */
+  --accent: #fbbf24; /* Links/atenção */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+h1, h2, p {
+    color: var(--text);
+}
+
+.withoutExternalRedirect {
+    text-decoration: none;
+}
+
+/* Caso haja redirecionamento externo! */
+a.external-redirect {
+    cursor: pointer;
+    text-decoration: underline var(--accent);
+    text-align: center;
+    color: var(--accent);
+}
+
+button {
+    cursor: pointer;
+    background: var(--button);
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    background: var(--button-hover);
+}
+
+hr {
+    border: none;
+    height: 10px;
+    width: 100%;
+    margin: 30px auto;
+    background: linear-gradient(to right, transparent, var(--muted), transparent);
+}

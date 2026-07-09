@@ -1,0 +1,9 @@
+.item {
+    background: blue; /* TESTE para ver o tamanho dos cards*/
+    height: 20vh;
+}
+
+.item img {
+    height: inherit;
+    cursor: pointer;
+}
