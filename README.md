@@ -1,16 +1,15 @@
 # YoungSpiritHUB
 
+## Objective
+Create a devotional platform.
 
-## Objetivo
-Criar uma plataforma de devocionais.
-
-## Tecnologias
+## Technologies
 - React
 - Node.js
-- Banco de dados
+- Database
 
 ## Status
-🚧 Projeto em desenvolvimento
+🚧 Project under development
 
-# Direitos autorais
-Proibido copiar!
+# Copyright
+Copying prohibited!
