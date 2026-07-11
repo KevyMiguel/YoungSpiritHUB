@@ -1,1 +1,21 @@
-{}
+{
+  "name": "young",
+  "version": "1.0.0",
+  "description": "Create a devotional platform.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevyMiguel/YoungSpiritHUB.git"
+  },
+  "keywords": [],
+  "author": "KevyMiguel",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KevyMiguel/YoungSpiritHUB/issues"
+  },
+  "homepage": "https://github.com/KevyMiguel/YoungSpiritHUB#readme"
+}
