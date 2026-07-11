@@ -7,6 +7,11 @@ header {
     align-items: center;
 }
 
+#logoImg {
+    color: white;
+    width: 50px;
+}
+
 #menuEntryInProfile {
     display: flex;
     flex-direction: row;

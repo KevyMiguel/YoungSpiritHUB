@@ -1,12 +1,13 @@
 import '../Header/Header.css'
 import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
+import img from '../../assets/images/LOGO.png'
 
 const Header = () => {
   return (
     <header>
       <Link to='/'>
-        <img src="./" alt="Logotipo_Site" />
+        <img id="logoImg" src={img} />
       </Link>
       <h1>Devocionais que vão te edificar</h1>
       <input type="search" placeholder='Pesquise'/>
