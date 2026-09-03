@@ -1,10 +1,10 @@
 // 09.05.2026 - Por enquanto mexer em outros... depois pensar em ITEMS
 
 // Importação estilos do Home
-import '../Home/Home.css'
+import './Home.css'
 
 // Importação Item e seus estilos
-import Item from '../Item/Item.jsx'
+import Item from '../../components/Item.jsx'
 
 // Importar estado do usuário
 import { useState } from "react";
@@ -46,15 +46,6 @@ function Home() {
         <hr/>
           <h1>Devocionais!</h1>
         <section id="categoriesDevotionals">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
             <Item />
             <Item />
             <Item />

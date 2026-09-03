@@ -1,6 +1,6 @@
 import React from 'react'
 import './Item.css'
-import img from '../../assets/images/Administrar.png'
+import img from '../../src/assets/images/Sabedoria.png'
 
 const Item = () => {
   return (

@@ -1,7 +1,7 @@
-import '../Header/Header.css'
+import '../components/Header.css'
 import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
-import img from '../../assets/images/LOGO.png'
+import img from '../assets/images/LOGO.png'
 
 const Header = () => {
   return (
@@ -10,8 +10,6 @@ const Header = () => {
         <img id="logoImg" src={img} />
       </Link>
       <h1>Devocionais que vão te edificar</h1>
-      <input type="search" placeholder='Pesquise'/>
-      <button type="submit">Pesquise!</button>
       <Link className='withoutExternalRedirect' to='/Login' id="menuEntryInProfile">
           <p id='iconMenu'>☰</p>
           <FaUserCircle id='profileEntry'/>
