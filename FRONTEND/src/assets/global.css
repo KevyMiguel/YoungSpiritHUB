@@ -2,8 +2,8 @@
   --bg: #0f172a; /* Background */
   --surface: #1e293b; /* Fundo secundário (cards / sections) */
   --primary: #3730a3; /* Header/destaque */
-  --button: #3730a3; /* Botões */
-  --button-hover: #818cf8; /* HOVERBotoes */
+  --button: #544cca; /* Botões */
+  --buttonHover: #818cf8; /* HOVERBotoes */
   --text: #e5e7eb; /* Cor dos textos principais*/
   --muted: #94a3b8; /* Cor dos textos secundários */
   --accent: #fbbf24; /* Links/atenção */
@@ -23,7 +23,8 @@ h1, h2, p {
     color: var(--text);
 }
 
-.withoutExternalRedirect {
+a.internaledirect {
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -44,7 +45,7 @@ button {
 }
 button:hover {
     cursor: pointer;
-    background: var(--button-hover);
+    background: var(--buttonHover);
 }
 
 hr {

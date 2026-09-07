@@ -2,6 +2,9 @@
 // POST http://localhost:3000/users/login = para fazer login
 // GET  http://localhost:3000/users = para buscar todos os usuários
 
+// ATENÇÃO: Futuramente, tratar erros do Axios e mostrar mensagens
+// amigáveis para o usuário na interface.
+
 import User from './model.js';
 import bcrypt from "bcryptjs";
 import { Router } from "express";
@@ -60,17 +63,6 @@ router.post("/", async (req, res) => {
 
 })
 
-// teste para encontrar o usuário: {
-//   "name": "Kevy",
-//   "email": "kevy@xyz.com",
-//   "password": "Kevy@123"
-// }
-
-// login2
-// {
-//   "email": "teste3@teste3.com",
-//   "password": "Teste3"
-// }
 router.post("/login", async (req, res) => {
     connectDb();
 

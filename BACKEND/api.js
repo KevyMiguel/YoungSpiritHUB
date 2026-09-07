@@ -1,6 +1,8 @@
 // Comentários feitos com base no aprendizado da Hashtag Programação e ChatGPT
 
-// #  Toda vez que acesso uma URL e essa URL é uma A.P.I., eu estou fazendo uma requisição do tipo "GET". 'Cannot GET /' significa: eu não tenho nada aqui que me diga como responder à uma requisição do tipo "GET"
+// Toda vez que acesso uma URL de uma API, estou fazendo uma requisição.
+// Se eu não criei uma rota para responder àquela requisição, o Express
+// pode responder com "Cannot GET /".
 
 // email: kevy@xyz.com
 // senha: Kevy@123
@@ -8,14 +10,20 @@
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
-
 import userRoutes from './domains/users/routes.js';
+import cors from 'cors';
 
 const app = express();
 const { PORT } = process.env;
 
-// Middleware (função no meio do caminho) que pegue todas as requisições () que estão sendo enviadas e transforme em um JSON
+// Middleware: uma função que fica no caminho entre a requisição
+// e a resposta. O express.json() permite que o Express leia
+// dados enviados em JSON no corpo das requisições.
 app.use(express.json());
+
+// Middleware que permite que o frontend faça requisições
+// para o backend mesmo estando em uma origem diferente.
+app.use(cors());
 
 app.use("/users", userRoutes);
 
