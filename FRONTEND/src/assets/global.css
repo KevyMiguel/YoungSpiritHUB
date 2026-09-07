@@ -2,7 +2,7 @@
   --bg: #0f172a; /* Background */
   --surface: #1e293b; /* Fundo secundário (cards / sections) */
   --primary: #3730a3; /* Header/destaque */
-  --button: #6366f1; /* Botões */
+  --button: #3730a3; /* Botões */
   --button-hover: #818cf8; /* HOVERBotoes */
   --text: #e5e7eb; /* Cor dos textos principais*/
   --muted: #94a3b8; /* Cor dos textos secundários */
@@ -39,6 +39,8 @@ button {
     cursor: pointer;
     background: var(--button);
     transition: all 0.2s ease-in-out;
+    border: none;
+    margin: 3px;
 }
 button:hover {
     cursor: pointer;
