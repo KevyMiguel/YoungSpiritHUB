@@ -46,10 +46,46 @@ const Register = ({setUserLogged}) => {
         <style>
             {`
                 #registerWrapper {
-                    background: red;
-                    border: 4mm ridge rgb(211 220 50 / 0.6);
+                    
+                    display: flex;
+                    height: 100vh;
+                    justify-content: center;
+                    align-items: center;
                 }
 
+                #registerElements {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: var(--primary);
+                border: 4mm ridge rgb(211 220 50 / 0.6);
+                border: 4mm ridge rgb(244 55 50 / 0.6);
+                gap: 10px;
+                width: 85vw;
+                max-width: 400px;
+                height: 85vh;
+                max-height: 400px;
+                border-radius: 15px;
+            }
+
+                #registerElements input,
+                #registerElements button {
+                    height: 5vh;
+                    width: 20vh;
+                    border-radius: 5px;
+                    border: none;
+                    text-align: center;
+                }
+
+                #registerElements button {
+                    background-color: var(--button);
+                }
+
+                #registerElements button:hover {
+                    background-color: var(--buttonHover);
+                }
+                
                 .internalRedirect {
                     color: #e5e7eb;
                 }
