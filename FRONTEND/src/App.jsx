@@ -26,7 +26,7 @@ const App = () => {
         <Header userLogged={userLogged}/>
         <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/Login' element={<Login setUserLogged={setUserLogged} />}/>
+            <Route path='/Login' element={<Login userLogged={userLogged} setUserLogged={setUserLogged} />}/>
             <Route path='/Register' element={<Register setUserLogged={setUserLogged} />}/>
             {/* <Route path='/salvation' element={<Salvation/>}/> */}
         </Routes>

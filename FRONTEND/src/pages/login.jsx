@@ -3,7 +3,7 @@ import { Link, Navigate } from 'react-router-dom'
 import React, { useState } from "react";
 import axios from 'axios';
 
-const Login = ({setUserLogged}) => {
+const Login = ({userLogged, setUserLogged}) => {
 
   // Estou usando uma varíavel de estado que dá dois argumentos (valores), o 
   // primeiro se refere à variavel que estou criando: "email", o 
@@ -37,9 +37,13 @@ const Login = ({setUserLogged}) => {
 
   };
 
+
+console.log("Usuário logado:", userLogged);
+console.log("Redirecionar:", redirect);
+
   // Verificação
 
-  if (redirect) return <Navigate to='/' />
+  if (redirect || userLogged) return <Navigate to='/' />
   return (
     <>
       <style>
