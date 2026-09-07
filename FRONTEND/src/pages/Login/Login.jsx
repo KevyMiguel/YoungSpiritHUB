@@ -1,6 +1,7 @@
 import './Login.css'
 import React, { useState } from "react";
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 
 const Login = () => {
 
@@ -11,10 +12,20 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(`Enviaram as seguintes informações. Email: ${email}. Senha: ${password}`);
+    if (email !== "" && password !== "") {
+      // Se os dois campos estão preenchidos
+      const axiosResponse = await axios.post('/users/login', {
+        email,
+        password
+      });
+      console.log(axiosResponse);
+    } else {
+      alert('Você preencher o e-mail e a senha')
+    }
+
   }
   return (
     <>

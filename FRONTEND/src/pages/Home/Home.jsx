@@ -9,8 +9,7 @@ import Item from '../../components/Item.jsx'
 // Importar estado do usuário
 import { useState } from "react";
 
-// Importação de rotas do React (mudar de páginas SEM carregar)
-import { Link } from 'react-router-dom'
+
 
 function Home() {
   const [index, setIndex] = useState(0)
