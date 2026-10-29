@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-        <Header userLogged={userLogged}/>
+        {/* <Header userLogged={userLogged}/> */}
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/Login' element={<Login userLogged={userLogged} setUserLogged={setUserLogged} />}/>

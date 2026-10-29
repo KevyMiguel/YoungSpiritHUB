@@ -1,0 +1,34 @@
+Escopo do projeto:
+MVP YoungSpiritHUB
+
+Common User:
+
+view devotionals
+Likes devotionals (review later looong time)
+But... auth for likes devotionals... because WOULD BE an error keep in Localstorage
+
+Admin User:
+Create devotional
+Essential
+Max pages: "home", "login", "4 devotionals"
+
+---
+
+frontend/
+
+
+├── server.js
+├── routes/
+│   ├── auth.js
+│   ├── users.js
+│   ├── devotionals.js
+│   └── likes.js
+
+
+backend/
+├── server.js
+├── routes/
+│   ├── auth.js
+│   ├── users.js
+│   ├── devotionals.js
+│   └── likes.js

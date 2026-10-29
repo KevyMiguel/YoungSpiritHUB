@@ -1,4 +1,4 @@
-import '../assets/global.css'
+
 import { Link, Navigate } from 'react-router-dom'
 import React, { useState } from "react";
 import axios from 'axios';
