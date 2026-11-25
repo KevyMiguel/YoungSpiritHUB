@@ -1,4 +1,10 @@
 // 09.05.2026 - Por enquanto mexer em outros... depois pensar em ITEMS
+// Voltando ao código (24/11/2026
+// Aula do canal "hashtag treinamentos":
+// URL:
+// Minutagem:
+
+
 
 // Importação Item e seus estilos
 import Item from '../components/Item.jsx'
@@ -11,24 +17,24 @@ import { useState } from "react";
 function Home() {
   const [index, setIndex] = useState(0)
   const images = [
-            "/src/assets/images/Administrar.png",
-            "/src/assets/images/Consolo.png",
-            "/src/assets/images/Sabedoria.png",
-            "/src/assets/images/Salvacao.png"
-          ]
+    "/src/assets/images/Administrar.png",
+    "/src/assets/images/Consolo.png",
+    "/src/assets/images/Sabedoria.png",
+    "/src/assets/images/Salvacao.png"
+  ]
 
-          function nextSlide() {
-            setIndex((prev) => (prev + 1) % images.length)
-          }
+  function nextSlide() {
+    setIndex((prev) => (prev + 1) % images.length)
+  }
 
-          function prevSlide() {
-            setIndex((prev) => (prev - 1 + images.length) % images.length)
-          }
+  function prevSlide() {
+    setIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
 
   return (
     <>
-    <style>
-      {`
+      <style>
+        {`
         main {
         flex-direction: column; /* Não tirar de 'column' que senão o layout quebra */
         display: flex;
@@ -76,7 +82,7 @@ function Home() {
         gap: 10px;
       }
       `}
-    </style>
+      </style>
       <main>
         <h2 id="titleDevotionalsRecent">Acesse nossos devocionais mais recentes!</h2>
         <section className="slider">
@@ -85,19 +91,19 @@ function Home() {
           <img src={images[index]} alt="slide" />
           <button onClick={nextSlide}>▶</button>
         </section>
-          <nav>
-            <p id='home-slider-counter'>{index + 1 } / {images.length}</p>
-          </nav>
-        
-        <hr/>
-          <h1>Devocionais!</h1>
+        <nav>
+          <p id='home-slider-counter'>{index + 1} / {images.length}</p>
+        </nav>
+
+        <hr />
+        <h1>Devocionais!</h1>
         <section id="categoriesDevotionals">
-            <Item />
-            <Item />
-            <Item />
+          <Item />
+          <Item />
+          <Item />
         </section>
       </main>
-        
+
     </>
   )
 }
